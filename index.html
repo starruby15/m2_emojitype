@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>M2 TinyType</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="shortcut icon" href="#">
+</head>
+<body>
+	<main>
+		<div class="container mt-1">
+			<div class="digit-demo-container">
+				<h3>Project M2: EmojiType</h3>
+				<div class="parent">
+					<div class="div1">
+						 <img src="assets/applewatch.svg" alt="apple watch background">
+					</div>
+					<div class="div2">
+						<div class="watchapp">
+							<div id="canvas_box_wrapper" class="canvas-box-wrapper">
+								<div id="canvas_box" class="canvas-box"></div>
+							</div>
+							<div class="emoji-text">
+								<p>&#x1F621;&#x1F92C;<br>&#x1F480;&#x1F52A;<br>&#x1F62D;&#x1F494;<br>
+									 &#x1F46F;&#x1F37B;<br>&#x1F922;</p>
+							</div>
+						</div>
+					</div>
+					<div class="div3">
+						<textarea id="text"></textarea>
+						<button id="clear-button" class="btn btn-secondary">clear</button>
+					</div>
+				</div>
+				<div class="div4">
+					<label for="checkbox">Display Results:</label>
+					<input type="checkbox" name="checkbox" />
+					<div class="prediction-text"></div>
+					<div id="result_box" >
+						<canvas id="chart_box" width="100" height="100"></canvas>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<script src="js/emoji-type.js"></script>
+</body>
+</html>
