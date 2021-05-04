@@ -1,3 +1,6 @@
+### Demo 
+![emojitype](https://github.com/starruby15/m2_emojitype/blob/main/images/demo.gif)
+
 ### Project Description 
 
 For ECE 188 Project M2 EmojiType, I decided to use a gesture-recognizer through drawing numbers for the emoji keyboard.  The user draws in the canvas a digit from 1-9 
